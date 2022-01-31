@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * A Product
@@ -26,6 +27,7 @@ class Product
      *
      * @ORM\Column
      */
+    #[Assert\NotNull]
     private ?string $mpn = null;
 
     /**
@@ -33,6 +35,7 @@ class Product
      *
      * @ORM\Column
      */
+    #[Assert\NotBlank]
     private string $name = '';
 
     /**
@@ -40,6 +43,7 @@ class Product
      *
      * @ORM\Column(type="text")
      */
+    #[Assert\NotBlank]
     private string $description = '';
 
     /**
@@ -47,6 +51,7 @@ class Product
      *
      * @ORM\Column(type="datetime")
      */
+    #[Assert\NotNull]
     private ?\DateTimeInterface $issueDate = null;
 
     /**
