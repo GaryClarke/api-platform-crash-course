@@ -14,7 +14,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 #[ApiResource(
     collectionOperations: ['get', 'post'],
-    itemOperations: ['get', 'put', 'patch']
+    itemOperations: ['get', 'put', 'patch'],
+    attributes: ["pagination_items_per_page" => 5]
 )]
 class Manufacturer
 {
