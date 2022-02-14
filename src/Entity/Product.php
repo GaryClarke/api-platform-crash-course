@@ -24,7 +24,8 @@ use Symfony\Component\Validator\Constraints as Assert;
         properties: [
             'name' => SearchFilter::STRATEGY_PARTIAL,
             'description' => SearchFilter::STRATEGY_PARTIAL,
-            'manufacturer.countryCode' => SearchFilter::STRATEGY_EXACT
+            'manufacturer.countryCode' => SearchFilter::STRATEGY_EXACT,
+            'manufacturer.id' => SearchFilter::STRATEGY_EXACT,
         ]
     ),
     ApiFilter(
