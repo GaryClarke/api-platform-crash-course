@@ -1,6 +1,13 @@
-# Fetching and Saving data
+========= testing ==========
 
-- A data providers and persisters provided for Doctrine ORM
-- Annotate the class and its properties
-- symfony console doctrine:migrations:diff
-- symfony console doctrine:migrations:migrate
+- symfony console --env=test doctrine:database:create
+
+- symfony console --env=test doctrine:migrations:migrate
+
+- composer require --dev alice symfony/test-pack symfony/http-client justinrainbow/json-schema
+
+- symfony console --env=test hautelook:fixtures:load
+
+- <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled" />
+
+- create ProductsTest
