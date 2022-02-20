@@ -4,6 +4,11 @@
 
 - symfony console --env=test doctrine:migrations:migrate
 
+Alice: Used to generate fake fixture data
+Symfont Test Pack: Includes PHPUnit and PHPUnit Bridge
+HttpClient: ApiPlatform built on this
+JsonSchema: Provides Json Schema test assertion
+
 - composer require --dev alice symfony/test-pack symfony/http-client justinrainbow/json-schema
 
 - symfony console --env=test hautelook:fixtures:load

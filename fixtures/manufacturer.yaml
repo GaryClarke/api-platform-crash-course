@@ -1,0 +1,7 @@
+# api/fixtures/manufacturer.yaml
+App\Entity\Manufacturer:
+    manufacturer_{1..10}:
+        name: <company()>
+        description: <text()>
+        countryCode: <countryCode()>
+        listedDate: <dateTime()>
