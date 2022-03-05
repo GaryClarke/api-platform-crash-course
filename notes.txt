@@ -1,3 +1,31 @@
+========== api-tokens =============
+
+- session auth / key|token auth
+- get maker bundle
+- make:user
+- make:migration
+- create user records
+- create ApiToken entity
+- create api-token record
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ========= testing ==========
 
 - symfony console --env=test doctrine:database:create
