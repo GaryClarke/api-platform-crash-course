@@ -8,6 +8,11 @@
 - create ApiToken entity
 - create api-token record
 
+========== ApiTokenAuthenticator =============
+
+- php bin/console make:auth
+-
+
 
 
 
