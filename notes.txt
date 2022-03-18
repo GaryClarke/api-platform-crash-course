@@ -11,8 +11,10 @@
 ========== ApiTokenAuthenticator =============
 
 - php bin/console make:auth
--
 
+========== Add auth to tests =============
+
+- symfony console --env=test doctrine:migrations:migrate
 
 
 

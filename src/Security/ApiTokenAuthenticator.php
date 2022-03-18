@@ -30,7 +30,7 @@ class ApiTokenAuthenticator extends AbstractAuthenticator
 
     public function supports(Request $request): ?bool
     {
-        return $request->headers->has('x-api-token');
+        return str_starts_with($request->getPathInfo(), '/api/');
     }
 
     public function authenticate(Request $request): Passport
