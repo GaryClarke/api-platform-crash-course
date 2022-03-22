@@ -18,6 +18,10 @@ use Symfony\Component\Validator\Constraints as Assert;
     ApiResource(
         normalizationContext: ['groups' => ['product.read']],
         denormalizationContext: ['groups' => ['product.write']],
+        collectionOperations: [
+            'get',
+            'post' => ['security' => 'is_granted("ROLE_ADMIN")']
+        ],
         attributes: ["pagination_items_per_page" => 5]
     ),
     ApiFilter(
